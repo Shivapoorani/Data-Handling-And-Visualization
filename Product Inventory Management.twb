@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0208.0337                               -->
+<workbook original-version='18.1' source-build='2024.1.0 (20241.24.0208.0337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Product Inventory Management' inline='true' name='federated.03g3cs40ds7jpa19fhlai1vm8i6i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Product Inventory Management' name='textscan.18x816m0n2eevn14pg4j702jyw71'>
+            <connection class='textscan' directory='C:/Users/Senthil Muthu/Documents/My Tableau Repository/Workbooks' filename='Product Inventory Management .csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.18x816m0n2eevn14pg4j702jyw71' name='Product Inventory Management .csv' table='[Product Inventory Management #csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Product ID' ordinal='0' />
+            <column datatype='string' name='Product Name' ordinal='1' />
+            <column datatype='integer' name='Quantity Available' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.18x816m0n2eevn14pg4j702jyw71' name='Product Inventory Management .csv' table='[Product Inventory Management #csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Product ID' ordinal='0' />
+            <column datatype='string' name='Product Name' ordinal='1' />
+            <column datatype='integer' name='Quantity Available' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Product Inventory Management .csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Product Inventory Management .csv]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Product Inventory Management .csv_EA452DEC258142D9B132C6E7B09A0203]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[Product Inventory Management .csv]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Product Inventory Management .csv_EA452DEC258142D9B132C6E7B09A0203]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity Available</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity Available]</local-name>
+            <parent-name>[Product Inventory Management .csv]</parent-name>
+            <remote-alias>Quantity Available</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Product Inventory Management .csv_EA452DEC258142D9B132C6E7B09A0203]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Product ID]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Product Inventory Management .csv' datatype='table' name='[__tableau_internal_object_id__].[Product Inventory Management .csv_EA452DEC258142D9B132C6E7B09A0203]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Product Inventory Management .csv' id='Product Inventory Management .csv_EA452DEC258142D9B132C6E7B09A0203'>
+            <properties context=''>
+              <relation connection='textscan.18x816m0n2eevn14pg4j702jyw71' name='Product Inventory Management .csv' table='[Product Inventory Management #csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Product ID' ordinal='0' />
+                  <column datatype='string' name='Product Name' ordinal='1' />
+                  <column datatype='integer' name='Quantity Available' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Inventory Management' name='federated.03g3cs40ds7jpa19fhlai1vm8i6i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03g3cs40ds7jpa19fhlai1vm8i6i'>
+            <column datatype='integer' name='[Product ID]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Quantity Available]' role='measure' type='quantitative' />
+            <column-instance column='[Product ID]' derivation='None' name='[none:Product ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Quantity Available]' derivation='Sum' name='[sum:Quantity Available:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.03g3cs40ds7jpa19fhlai1vm8i6i].[none:Product ID:ok]</rows>
+        <cols>[federated.03g3cs40ds7jpa19fhlai1vm8i6i].[sum:Quantity Available:qk]</cols>
+      </table>
+      <simple-id uuid='{1B6C24CF-0D0E-4E71-9118-6B6A18E2D27E}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.03g3cs40ds7jpa19fhlai1vm8i6i].[none:Product ID:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{772FD5A4-3DAD-43AF-AC5B-B14CDB316F79}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='187' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAC7CAYAAAAzOZEFAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAJ3UlEQVR4nO3df0zU9x3H8Vd3wx0KlTuNAyoGWo1agj8jTdduMdPUoTEas8Uf0cwFC+rc
+      2MLi1mHKZMOY1qUjzlirBqLVQv0RJkbSzmVus7J5QVBKtdUB1eEhlbvjxx034PbZH64ZwtHe
+      Hd/7fu94vx5/mRPDO+aefD7H3ef7fUIppUAk1FeMHoDISAyARGMAJBoDINEYAInGAEg0BkCi
+      MQASjQGQaAyARGMAJBoDINEYAInGAEg0BkCiMQASjQGQaAyARGMAJBoDINEYAInGAEg0BkCi
+      MQASjQGQaAyARGMAJBoDCDOPx2P0CAHr7u42eoSAaDknAyDRGACJ9lWjB5Bg1S/LjR6BRsAV
+      gERjACHob7fh+O4foai6zehRaJS4BQpGfzts5Qdx4kML5qXEGT0NaYArQBDa/nIOt2blYO+e
+      H+M7z8QaPQ5pgCtAEBKXbsEmo4cgTXEFINEYAInGAEg0BkCiMQASjQGQaPw1aMDaUF1UiMrW
+      wY8VIrfy0Z8ytx1C9jwj5qLReEIppYweYizzeDxY/5tzRo9BI+AWiETjChBmHo8H48ePN3qM
+      gHR3dyM+Pt7oMb6UlnNyBSDRGACJxgBINAZAovF9AB3wTHDk4gpAonEFCEo/2m1n8fa5Gtxp
+      74XPFIsp6SuRk7MEKTFGz0ahYABBuF2xC0cefAMbtu9FXpIZpn4nblYdxGuH4/D69udgNnpA
+      ChoDCEL8N/OwJzkZps8fiLFg9prlmJdbi1t4DvwoUPRhAEFITE4e/qC7Bz1WCybqPw5pgC+C
+      R8N9B2dLqhC3dhnSjJ6FQsIVICQ+dDWcxhtHGzEjuwCbMyYYPRCFiAEEy9eFhop9OHo7HdlF
+      hch40vTl/4YiFgMIihv1ZcW4YHkZxYXTwZ/70Y+vAYLgrinFO1iPvDV88o8VDCBgnbB94MDi
+      FfP45B9DuAUK2F20NLWipjAXlcP+LhPbDmXzfYAoxBNhYcYzwZGNWyASjStAmPFMsPZ4JphI
+      IwyARGMAJBoDINH4PoAOeCY4cnEFING4AgTBfe8yzp+6CFuzHd19AMbFIzVzLbLXLcIUngmO
+      SgwgYD40/eM6zEu2oHBmEuLNJvi8dlwrP4hfH/4PzwRHKW6BAmZCxnd/iFVzpyLe/OgMgMmc
+      hEWbViHj+oe4ZfB0FBoGMEq+u5/i7tOpmGb0IBQSboFC4oO3244W20VU/OnfWPHTVbAaPRKF
+      hCtASEyIiZmIuElfx1PjbuOv1x7AZ/RIFBIGECKTOR5T52Zhy66tePrPJ/G3TqMnolAwgNEy
+      jUfs11zoZABRiQEErAGnX6/A5aZ2uPsfPeLzduBm9bu4NLAAc54ydjoKDV8EB2wWvrX4nzhV
+      8VucvudCrw+P3gibm4WtryxBGq+OEpV4ICbMeCQysnELRKJxBQgzHonUHo9EEmmEAZBoDIBE
+      YwAkGt8H0AGPREYurgAkGgMIleMS9m3PRW5RNdqMnoVCxgBC4kbNyWpMXr0M/AhQdGMAIXDX
+      lKIybiPWzYk1ehQaJQYQLHcNSivjsHFdBg/BjwEMIChu1J6oRtzGdcjgs39MYABBcNeewB/G
+      fQ/r+OwfMxhAoNz1KD8fhw2buPUZS/hp0AB99v4e7Drz6chfkLkNh7KH3yWM5wEiGwMYjbZq
+      FL0F5LyahcQRvoQBRDZugUg0BkCicQsUZtwCRTauACQaV4Aw45lg7fFMMJFGGACJxgBINAZA
+      ovFMsA54JjhycQUg0bgCBKUeR3MP4urQh0f4IBxFPgYQjDY7Wmesx2s/W4yJRs9CmuAWKBht
+      9+FMTuSTfwxhAEFos7fimbRUo8cgDXELFITPHrShoTIPuWUAYEJsQgoWrtyINS+mYILBs1Fo
+      +FmgkPXD/a96nHrrGO4//wp+npUMf3dJ4qdBIxu3QCGLwYSpi7D5J6thqnofHxk9DoWEAYyW
+      dRIm+3y8UXaUYgABc8Pt9vOwowMPx8fyShFRigEErAmnCnbj+OUmdHh9AHzw2m0o+10lfFnf
+      xiyjx6OQ8EVwEHxdn+DSu2dQfb0F3X3AuPhUzF29Ed9/MQUxI/wbvgiObAwgzBhAZOMWiETj
+      ChBmPBOsPZ4JJtIIV4Aw83g8Ro9AX4CfBdJBtGyBomW7puWc3AKRaAyARGMAJBoDINH4WyAS
+      jSsAicYASDQGQKIxABKNAZBoDIBE42eB9OZ7iNqTb+J4zT30IhYpz2/C1g0LMdnfNVXCpL/d
+      hvKDx9CcWYBXs4bf4dh9pxplpRdw42Efxk2eg+U/2Iys6Xpe+agf7bazePtcDe6098JnisWU
+      9JXIyVmClEFH7zSZU5GOetWN0nyVf+SqcvQppfoc6uqRfJVfekP16vHt+x6oq8d+pfJ2lqjS
+      /b9Quy/Yh3+N/T1VvKNYVTX3qgE1oHqbq1TxjmL1np8vDZdPyneqnSWVqv5+rxpQSqk+h/ro
+      TLHaceDv//9/0mhOBqCnjotqb8EZ1TQw6LGBJnWmYK+62BH+b2//42F17Op91TuglP3Cbj8B
+      DKjG4/lq/5Wexx7tubJf5R9vVANKH/bWVj/fq04dyTmi6pRSWs7J1wA68n58E64F85E2eLtj
+      SsP8BS7c/Ngb9u+fuHQLNi1KgnnE7dZd3GpMxcL5j28jJsxfiNTGW7gb9gkfSUz2c5U9dw96
+      rJb/XZhYuzkZgI5cLgcmWa3DHrdaJ8Hhchkw0VCdcHqtsAy9yJHZAqvXiU5DZgLgvoOzJVWI
+      W7sMaQC0nJMvgnVmSRh+cfWJCRag14Bh/LFYkDDswQRYLAbMAh+6Gk7jjaONmJFdgM0Zg37i
+      azQnA9CZ09UJDLnDQKfLacww/jidcAF4/HdDLjidQJKec/i60FCxD0dvpyO7qBAZTw7ZFGk0
+      JwPQUUKCFR12B4YG4HB0wJo0/OeZ/ibCYnbA6QUeu9aj1wmH2aLjjUHcqC8rxgXLyygunO7n
+      0vPazcnXADoyz5yNhGt1aB58JV1fM+quJWD2zEi4uug0zEpvQW3d4xdBddfVoiV9FqbpNIW7
+      phTvYD3y1vh78gNazskA9GR9AcunX8GBMhuc/QD6nbCVHcCV6cvxwvDXxgYw4dmlL6HrZAnO
+      t3jhgw/elvMoOdmFl5Y+6/f+B9rrhO0DBxavmPcFNx3Rbk4eiNGbYe8Et6G6qBCVrf7/NnPb
+      IXx+o0tj3wluQNn236PG7/XmM7HtUDY+vx+nFnMyABKNWyASjQGQaAyARGMAJBoDINEYAInG
+      AEg0BkCiMQASjQGQaAyARGMAJBoDINEYAInGAEg0BkCiMQASjQGQaAyARGMAJBoDINEYAInG
+      AEg0BkCiMQASjQGQaAyARGMAJBoDINEYAInGAEg0BkCiMQASjQGQaAyARPsv6jmvG//y3nsA
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
